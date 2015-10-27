@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
     <link rel="shortcut icon" href="#"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/index.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
   </head>
-  <body>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="#">pH and pOH</a></li>
+        <li><a href="#">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="#">Do the Math</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Basic Quiz</a></li>
+        <li><a href="#">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel" id="welcome">
+        <p>Welcome to Acids and Bases 101: a comprehensive compilation of elementary information regarding acids and bases. This resource is convenient for studying and research alike! (Almost as though it were made for those purposes) To access specific information enter the sections above, and please be careful of the puns. If you want to follow a structured “curriculum” start reading below and follow the indicated links. There is a short practice test following the educational content, and all sources can be located in the bibliography under the “Anti-Plagiarism Section.”</p>
+      </div>
+      <div class="stuffPanel" id="terminology">
+        <p class="stuffHeader">Classification Terminology</p>
+        <p class="stuffParagraph">The terms acid and base are used to classify substances with certain chemical properties, often opposite. (One can also use acidic and basic respectively.) This terminology is particularly useful due to the ubiquity of acids and bases in both industrial and household applications. In the industrial realm, acids or bases can be found in fertilizers, cleaners, batteries, explosives, and certain manufacturing processes. In everyday life, we see acids and bases in our cleaning products, food, and even our own biological systems. Acids and bases are defined through three theories, which we will cover in the next section.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Acids</p>
+        <p class="stuffParagraph">Acids are formed through the reaction of a nonmetal oxide and water. They generally are sour tasting, although one should NEVER TASTE-TEST AN UNKWOWN SUBSTANCE. Acids can act as electrolytes, or in other words, conduct electricity well. They react corrosively with metals, but can also corrode other substances. Some examples of common industrial acids include nitric acid and sulphuric acid, which can be used in fertilizers, paints, and explosives. Examples of common household acids include citric acid and hydrochloric acid, which can be found in citrus fruits and digestive juices respectively. These properties paint a general picture of acidic substances, and we will define them more technically in the next section.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Bases</p>
+        <p class="stuffParagraph">Bases are created through the reaction of a metal oxide and water, directly contrasting the formation of acids. Bases exist in two types: those soluble in water, and those that are not. The later are referred to merely as bases, while the former are differentiated by the term “alkali.” Bases generally taste bitter, although again one should NEVER TASTE-TEST AN UNKWOWN SUBSTANCE. They have a slippery texture similar to soap, although one should NEVER TOUCH AN UNKWOWN SUBSTANCE. Like acids, alkalis are electrolytes and can conduct electricity well. They too react corrosively with metals, and can also corrode other substances. Common household alkalis include soaps, detergents, and even human blood. In the industrial realm, one can find alkalis in cleaners, as well as some alkali batteries. The information above may allow one to ascertain whether a substance is a base based on its properties, more formal definitions will be provided in the next section.</p>
+      </div>
+      <div class="sectionGuide">
+      </div>
+    </div>
   </body>
 </html>

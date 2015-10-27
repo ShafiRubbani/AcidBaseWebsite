@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/theory.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
+  </head>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="#">pH and pOH</a></li>
+        <li><a href="#">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="#">Do the Math</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Basic Quiz</a></li>
+        <li><a href="#">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel">
+        <p class="stuffHeader">Acid Base Definitions</p>
+        <p class="stuffParagraph">Acids and bases have been defined in multiple ways in the past two centuries. The three major theories recognized today are all considered correct definitions, but provide varying perspective and depth into the behaviors of such substances.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Arrhenius Theory</p>
+        <p class="stuffParagraph">A Swedish scientist named Svante Arrhenius defined the first of the major theories, the Arrhenius Theory, in 1887. Arrhenius characterized substances as acidic or basic based on their interactions with water. He said that a substance that dissociates in water to produced hydrogen ions (H+ ions) was acidic, and that a substance that dissociates in water to produce hydroxide ions (OH- ions) was basic. It is of note that hydrogen ions exist in water only as hydronium ions (H3O+ ions), a slight error in Arrhenius’ original theory. Using Arrhenius’ theory, it is possible to quantify the potency of an acid or base based on the extent to which it associates, and thus characterize it as strong or weak. This method will be discussed in the next section.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Brønsted-Lowry Theory</p>
+        <p class="stuffParagraph">In 1923, Johannes Nicolaus Brønsted and English scientist Thomas Martin Lowry separately created the Proton Theory of Acids and Bases. This theory defined acids and bases more generally than Arrhenius’, saying that an acid was any substance that could act as a proton (H+ ion) donor, and that a base was any substance that could act as a proton (H+ ion) receiver. The Brønsted-Lowry Theory had two important distinctions from the Arrhenius Theory. Firstly, it allows for atoms and molecules alike to be acids and bases. Secondly, and perhaps most importantly, it characterizes substances based on the way they act in reactions. This allows a substance like water (H2O) to act as both an acid and a base, as it can be either a hydrogen ion donor or a hydrogen ion receiver.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Lewis Theory</p>
+        <p class="stuffParagraph">The Lewis Theory, created by American chemist Gilbert N. Lewis, was also published in 1923. According to Lewis, acids are those substances that can bond with unshared electron pairs, and bases are those substances that can share them. Lewis’ definitions are much broader than those above, often beyond the scope of the term usage, and for this reason Lewis acids and Lewis bases are referred to explicitly as such.</p>
+      </div>
+      <div class="sectionGuide">
+      </div>
+    </div>
+  </body>
+</html>

@@ -72,9 +72,6 @@ body{
   text-decoration:none;
   text-align:justify;
 }
-#welcome p{
-  text-align:center;
-}
 .stuffParagraph{
   text-align:justify;
 }
@@ -196,10 +193,6 @@ body{
     padding-left:15px;
     padding-right:15px;
   }
-  #welcome p{
-    font-size:14pt;
-    padding:15px;
-  }
   .stuffParagraph{
     padding:15px;
     padding-top:0px !important;
@@ -273,10 +266,6 @@ body{
     padding-top:15px;
     padding-left:15px;
     padding-right:15px;
-  }
-  #welcome p{
-    font-size:12pt;
-    padding:15px;
   }
   .stuffParagraph{
     padding:15px;
