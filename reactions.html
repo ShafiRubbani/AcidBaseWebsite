@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/reactions.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
+  </head>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="phScale.html">pH and pOH</a></li>
+        <li><a href="reactions.html">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="#">Do the Math</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Basic Quiz</a></li>
+        <li><a href="#">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel">
+        <p class="stuffHeader">Neutralization Reactions</p>
+        <p class="stuffParagraph">Of those reactions that involve acids and bases, the most important is the neutralization reaction. As one might well guess from the word “neutral” in the name, the neutralization reaction balances the concentration of hydrogen ions and hydroxide ions in a solution, thus making it neutral. While there is only one way to neutralize a base, there are in fact three methods through which one can neutralize an acid.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Acid-Base Neutralization</p>
+        <p class="stuffParagraph">One way to neutralize an acid is to react it with a base. According to the Arrhenius Theory, acids dissociate in water to produce an imbalance of hydrogen ions, and bases dissociate in water to produce an imbalance of hydroxide ions. Combined in the correct proportions, an acid and a base would produce the same concentration of hydrogen and hydroxide ions respectively. These hydrogen and hydroxide ions would react to form water, and thus the solution would be neutral. Resultantly, an acid-base neutralization is always of the form acid + base → salt + water. Note that the salts produced must be neutral; as they can neither produce hydrogen ions nor hydroxide ions (both have already been produced through neutralization). One common example of acid base neutralization is the reaction between hydrochloric acid (HCl) and sodium hydroxide (NaOH). In the reaction, hydrochloric acid gives away a hydrogen ion and sodium hydroxide accepts it, making hydrochloric acid the acid (gasp!) and sodium hydroxide the base. The reaction yields dihydrogen monoxide, or water, and sodium chloride, which is table salt!</p>
+        <center><iframe width="280" height="210" src="https://www.youtube.com/embed/8IRI5gPR5EY" frameborder="0" allowfullscreen></iframe></center>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Acid-Metal Neutralization</p>
+        <p class="stuffParagraph">Another way to neutralize an acid is to react it with a metal. As the acid reacts with the metal, it will produce salt, the type of which depends on the particular acid. HCl, or hydrochloric acid, produces salts of the chloride family. HNO3, or nitric acid, produces salts of the nitrate family. H2SO4, or sulphuric acid, produces salts of the sulphate family. The hydrogen ions produced by the dissociation of the acid will be unable to bond with hydroxide ions (as there are none) and will be forced to bond with one another, creating H2 or hydrogen gas. Thus, acid-metal neutralizations are always of the form acid + metal → salt + H2 (gas).</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Acid-Carbonate Neutralization</p>
+        <p class="stuffParagraph">The third method of acid neutralization is the acid-carbonate reaction. (Note that carbonates are substances of the form XCO3, where X is an ion) When an acid reacts with a carbonate, the hydrogen ions of the former react with oxygen in the latter to form dihydrogen monoxide, or water. The remaining CO2 in the carbonate becomes carbon dioxide gas. Lastly, the remainder of the acid reacts with the leading ion of the carbonate to form a salt, the type of which depends on the acid family (see acid-metal neutralization above). As a result, acid-carbonate reactions are always of the form acid + carbonate → salt + water + CO2 (gas).</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Titrations</p>
+        <a href="http://www.shsu.edu/~chm_tgc/sounds/pushmovies/titrate.gif"><img class="leftImage" src="http://www.shsu.edu/~chm_tgc/sounds/pushmovies/titrate.gif"/></a><p class="stuffParagraph">As mentioned in the above section on acid-base neutralization, to neutralize an acid and a base, one must react the two together in certain proportions. These proportions depend on the molarity of the solutions, which will be covered in the next section. It is possible, however, to ascertain said proportions through a process called titration. In a titration, first the base in question is measured, and then three drops of an indicator such as phenolphthalein are added. Phenolphthalein turns a basic solution pink-colored, and can act as a pH indicator. Once the base-phenolphthalein solution is prepared, acid is carefully added incrementally in small amounts (being careful to agitate the solution) until the pink-color disappears. Once the color disappears, the solution is neutral. Depending on the increment in which the acid is added, titrations can be quite precise. The animation provides an example of a titration, but note the slightly different procedure.</p>
+      </div>
+      <div class="sectionGuide">
+        <a class="prevArrow" href="reactions.html">< Previous Section</a>
+        <a class="nextArrow" href="">Next Section ></a>
+      </div>
+    </div>
+  </body>
+</html>

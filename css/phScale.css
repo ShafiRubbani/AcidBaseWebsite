@@ -68,6 +68,10 @@ body{
 .stuffPanel:hover{
   background-color:#6BDB6B;
 }
+.stuffPanel img{
+  width:100%;
+  height:auto;
+}
 .stuffHeader{
   text-decoration:none;
   text-align:justify;

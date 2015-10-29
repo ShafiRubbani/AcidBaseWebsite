@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/phScale.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
+  </head>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="phScale.html">pH and pOH</a></li>
+        <li><a href="reactions.html">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="#">Do the Math</a></li>
+        <li><a href="#">Glossary</a></li>
+        <li><a href="#">Basic Quiz</a></li>
+        <li><a href="#">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel">
+        <a href="http://www.bcscience10.com/images/0_quiz-5.1-04.gif"><img src="http://www.bcscience10.com/images/0_quiz-5.1-04.gif" /></a>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">pH and pOH Scales</p>
+        <p class="stuffParagraph">In distillated (pure) water, which is theoretically composed completely of H2O molecules, some molecules dissociate, or break up into smaller molecules. These molecules split into hydrogen (H+) ions and hydroxide (OH-) ions. The hydrogen ions technically bond with water molecules to form hydronium (H3O+) ions, but these are generally referred to as hydrogen ions for simplicity’s sake. Because the creation of each hydrogen ion creates a hydroxide ion (and vice versa), the ratio between the respective presences of hydrogen ions and hydroxide ions in water is 1:1.<br>According to Arrhenius’ theory, an acid is a substance that dissociates in water to produce hydrogen ions. Because of this, in an acidic solution there are more hydrogen ions produced than hydroxide ions. Likewise, a base is defined as a substance that dissociates in water to produce hydroxide ions, and so in a basic solution there are more hydroxide ions produced than hydrogen ions. Chemists use these properties to quantify the acidity or basicity of a substance, through the pH and pOH scales.<br>pH and pOH stand for parts hydrogen and parts hydroxide respectively. This alludes directly to the values for which they stand. The pH of a substance is a function of the concentration of hydrogen ions in a solution. However, because the concentration of hydrogen ions can vary tenfold between an acid and one slightly more potent, scientists use a logarithmic scale. The pH value of a solution is equal to negative one multiplied by the logarithm base ten of the concentration of hydrogen ions. Written as a function, pH([H+]) = -log10([H+]). Likewise, the pOH of a solution is a function of the concentration of hydroxide ions in said solution, written as pOH([OH-]) = -log10([OH-]). In practical application, pH is used more frequently/universally than pOH.<br>The pH scale ranges from 0 to 14. Substances with a higher hydrogen ion concentration (more acidic substances) have lower pH’s, and substances with lower hydrogen ion concentration (more basic substances) have higher pH’s. A pH of 0-6 is considered acidic, 7 neutral (non-acidic and non-basic, like water), and 8-14 basic. It is worth noting that the pOH scale works in the exact opposite manner as the pH scale: substances with a higher hydrogen ion concentration, and thus a lower hydroxide ion concentration (more acidic substances) have higher pOH’s, and vice versa.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">The Strong and the Weak</p>
+        <p class="stuffParagraph">Thus far in this “walkthrough,” we have referred to the potency of acids and bases, a rather vague term. Now that we have a scale to measure acidity and basicity, we can speak more technically. (Note that this is explained using the Brønsted-Lowry Theory.) The concentration of hydrogen ions in a solution depends on how completely its molecules dissociate. A very acidic substance will fully dissociate, separating completely from hydrogen ions and donating them. A less acidic will only partially dissociate, sharing hydrogen ions instead of fully donating them. Thus, the more completely a solution’s molecules dissociate, the lower the substance’s pH, and thus the more vigorously the properties of acidity manifest. For example, acids with lower pH’s are most definitely more corrosive. These acids are said to be strong acids, whereas acids closer to the neutral value are said to be weak acids. Specifically, strong acids are those with pH’s of 0-3 (like hydrochloric acid or sulphuric acid), whereas weak acids are those with pH’s of 4-6 (like ethanoic acid or hydrogen fluoride). Likewise, strong (more potent) bases are those whose molecules dissociate fully to produce hydroxide ions, and thus have pH’s of 11-14 (like sodium hydroxide or potassium hydroxide), and weak bases are those with pH’s of 8-10 (like ammonia). Again, the reverse is true for pOH, but further calculations will be covered in a later section.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">pH Indicators</p>
+        <p class="stuffParagraph">As shown above, it is a simple matter to determine the pH of a solution, and thus the acidity/basicity, given the concentration of hydrogen ions. However, often it is necessary to quickly determine the above properties of a foreign substance, without knowing its qualities beforehand. In these situations, pH indicators are used.<br>One type of pH indicator is litmus paper. Litmus paper comes in two kinds: red and blue. Red litmus paper turns blue when dipped in a base, and blue litmus paper turns red when dipped in an acid. While litmus paper provides rather general information, it is very useful for quickly testing whether a substance is acidic or basic, especially when working en masse.<br>The second pH indicator, pH paper, functions similarly to litmus paper. When dipped in a solution, pH paper changes color. By comparing the color against a provided key, the pH of a solution can be determined to within 1 unit of accuracy. While this indicator is slightly more time-consuming to use, it is much more precise than litmus paper.<br>The third pH indicator is the universal indicator. Universal indicator is a solution itself, and when another substance is dissolved in/mixed with it, it changes color. Acidic solutions turn it red, orange, and yellow, (from strongest to weakest), neutral solutions turn it green, and basic solutions turn it blue, indigo, and violet (from weakest to strongest). This key is simple to remember, as it is simply the colors of the rainbow! Universal indicator is not as quick to use as the two other indicators, but is much better suited to measuring the pH’s of solids.<br>The three different pH indicators vary in precision and usage. However, each of them is particularly suited to a certain situation, and so in designing an experiment one must think carefully about which to use.</p>
+      </div>
+      <div class="sectionGuide">
+        <a class="prevArrow" href="theory.html">< Previous Section</a>
+        <a class="nextArrow" href="reactions.html">Next Section ></a>
+      </div>
+    </div>
+  </body>
+</html>
