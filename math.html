@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/math.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
+  </head>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="phScale.html">pH and pOH</a></li>
+        <li><a href="reactions.html">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="math.html">Do the Math</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="quiz.html">Basic Quiz</a></li>
+        <li><a href="bibliography.html">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel">
+        <p class="stuffHeader">pH and pOH Calculations</p>
+        <p class="stuffParagraph">There are five equations that govern the calculation of pH and pOH. The first, as we already discussed, is that given the hydrogen ion concentration (in molars) [H<sup>+</sup>] of a solution, pH = -1*log<sub>10</sub>[H<sup>+</sup>]. Because exponentiation is the inverse of the logarithm we can also say that given the pH, [H<sup>+</sup>] (in molars) = 10<sup>-pH</sup>. This is the second equation. The third and the fourth follow from the fact that the pOH of a solution is (put simply) the pH with hydroxide ions. Given a hydroxide ion concentration (in molars) [OH<sup>-</sup>] of a solution, pOH = 1*log<sub>10</sub>[OH<sup>-</sup>]. Given the pOH, [OH<sup>-</sup>] (in molars) = 10<sup>-pOH</sup>. Lastly, the fifth equation is that pH + pOH = 14. Using these five equations, it is possible to ascertain all of the above values given only one.</p>
+      </div>
+      <div class="sectionGuide">
+        <a class="prevArrow" href="reactions.html">< Previous Section</a>
+        <a class="nextArrow" href="quiz.html">Think you're ready? Take the quiz! ></a>
+      </div>
+    </div>
+  </body>
+</html>

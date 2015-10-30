@@ -73,7 +73,7 @@ body{
   text-align:justify;
 }
 .stuffParagraph{
-  text-align:justify;
+  text-align:left;
 }
 .leftImage,
 .rightImage{
@@ -92,6 +92,9 @@ body{
   width:95%;
   margin-left:2.5%;
   margin-right:2.5%;
+}
+#bibliography{
+  text-align:left !important;
 }
 .prevArrow,
 .nextArrow{

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acids and Bases 101</title>
+    <!--&#9883; 2D882D-->
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bibliography.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    function drop(){
+      if(document.getElementById('menu').style.display=="none"){
+        document.getElementById('menu').style.display="block";
+        //$('#scrollspy').css('margin-bottom','119px');
+      }
+      else{
+        document.getElementById('menu').style.display="none";
+        //$('#scrollspy').css({bottom:64, position:'fixed'});
+        //$('#scrollspy').css('margin-bottom','64px');
+      }
+    }
+    function viewChange(){
+      var w = window.outerWidth;
+      if(w<=736){
+        document.getElementById('menu').style.display="none";
+      }
+      else{
+        document.getElementById('menu').style.display="inline";
+      }
+    }
+    </script>
+  </head>
+  <body onresize="viewChange()">
+    <div id="header">
+      <p>&#9883; <span style="color:#FF3D3D">AC</span><span style="color:#FF773D">I</span></span><span style="color:#FFFC3D">DS</span> and <span style="color:#0020D4">BA</span><span style="color:#5020D4">S</span></span><span style="color:#6600B8">ES</span> 101 &#9883;</p>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">In Theory</a></li>
+        <li><a href="phScale.html">pH and pOH</a></li>
+        <li><a href="reactions.html">Action and Reaction</a></li><br id="sectionBreaker">
+        <li><a href="math.html">Do the Math</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="quiz.html">Basic Quiz</a></li>
+        <li><a href="bibliography.html">Anti-Plagiarism Section</a></li>
+      </ul>
+    </div>
+    <div class="stuff">
+      <div class="stuffPanel">
+        <p class="stuffHeader">Credits</p>
+        <p class="stuffParagraph">Writ this day, Thursday October 29, 2015, by Shafi of Section 10-5.</p>
+      </div>
+      <div class="stuffPanel">
+        <p class="stuffHeader">Bibliography</p>
+        <p id="bibliography"class="stuffParagraph">Bodner Research Web. Acid-Base Pairs, Strength of Acids and Bases, and pH. 2015. Bodner Research Web. (http://chemed.chem.purdue.edu/genchem/topicreview/bp/ch11/conjugat.php#pairs).<br>Clark, Jim. Strong and Weak Acids. 2013. Jim Clark. (www.chemguide.co.uk/physical/acidbaseeqia/acids.html).<br>—. Strong and Weak Bases. 2013. Jim Clark. (http://www.chemguide.co.uk/physical/acidbaseeqia/bases.html).<br>Encyclopaedia Britannica. Arrhenius Theory. 2015. Encyclopaedia Britannica. (http://www.britannica.com/science/Arrhenius-theory).<br>—. Bronsted-Lowry Theory. 2015. Encyclopaedia Britannica. (http://www.britannica.com/science/Bronsted-Lowry-theory ).<br>—. Lewis Theory. 2015. Encyclopaedia Britannica. (http://www.britannica.com/science/Lewis-theory).<br>Helmenstine, Anne Marie. Acids and Bases Definitions. 2015. about.com. (http://chemistry.about.com/od/acidsbases/a/acidsbasesterms.htm).<br>—. Name 5 Common Acids Found in the Home. 2015. about.com. (http://chemistry.about.com/od/acids/a/Name-5-Common-Acids-Found-In-The-Home.htm).<br>Kim, Ben. The Truth About Alkalizing Your Blood. 2015. Ben Kim. (http://drbenkim.com/ph-body-blood-foods-acid-alkaline.htm).<br>Leon, Nelson De. Acid/Base (Neutralization) Reactions. 2000. N. De Leon. (http://www.iun.edu/~cpanhd/C101webnotes/chemical%20reactions/acidbase.html).<br>salisbury.edu. The Lewis Acid-Base Concept. 2015. salisbury.edu. (http://facultyfp.salisbury.edu/dfrieck/htdocs/212/rev/acidbase/lewis.htm).<br>Science Buddies. Acidic or Basic? 2015. Science Buddies. (http://www.sciencebuddies.org/science-fair-projects/project_ideas/Chem_AcidsBasespHScale.shtml).<br>—. Measuring the pH. 2015. Science Buddies. (http://www.sciencebuddies.org/science-fair-projects/project_ideas/Chem_AcidsBasespHScale.shtml#measuringtheph).<br>Shetty, Satya. What are the uses of Bases? 2015. preservearticles.com. (http://www.preservearticles.com/201012261681/uses-of-bases.html).<br>University of California Davis. Arrhenius Concept of Acids and Bases. 2015. University of California Davis.<br>(http://chemwiki.ucdavis.edu/Physical_Chemistry/Acids_and_Bases/Acid/Arrhenius_Concept_of_Acids_and_Bases).</p>
+      </div>
+    </div>
+  </body>
+</html>
